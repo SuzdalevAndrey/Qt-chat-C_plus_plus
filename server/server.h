@@ -1,12 +1,12 @@
 #ifndef SERVER_H
 #define SERVER_H
 #include "databasemanagerauth.h"
-#include "D:\data\basedata.h"
-#include "D:\data\authData.h"
-#include "D:\data\message.h"
-#include "D:\data\userlist.h"
-#include "D:\data\privatemessage.h"
-#include "D:\data\authanswer.h"
+#include "..\data\basedata.h"
+#include "..\data\authData.h"
+#include "..\data\message.h"
+#include "..\data\userlist.h"
+#include "..\data\privatemessage.h"
+#include "..\data\authanswer.h"
 #include "QTcpServer"
 #include "QTcpSocket"
 #include "QVector"
@@ -22,7 +22,6 @@ public:
     ~Server();
 private:
     void registerUser(const authData& user);
-
     void loginUser(const authData& user);
     void sendAuthAnswerToClient(bool isLogin, userInfo user);
     void sendRegisterAnswerToClient(bool isLogin);

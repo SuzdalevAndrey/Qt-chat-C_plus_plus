@@ -9,17 +9,19 @@ CONFIG += c++17 cmdline
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        authmanager.cpp \
         databasemanagerauth.cpp \
         databasemanagerhistorychat.cpp \
         main.cpp \
+        messagehandler.cpp \
         server.cpp \
-        D:/data/authanswer.cpp \
-        D:/data/basedata.cpp \
-        D:/data/userlist.cpp \
-        D:/data/authdata.cpp \
-        D:/data/message.cpp \
-        D:/data/userinfo.cpp \
-        D:/data/privatemessage.cpp
+        ../data/authanswer.cpp \
+        ../data/basedata.cpp \
+        ../data/userlist.cpp \
+        ../data/authdata.cpp \
+        ../data/message.cpp \
+        ../data/userinfo.cpp \
+        ../data/privatemessage.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -27,13 +29,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    authmanager.h \
     databasemanagerauth.h \
     databasemanagerhistorychat.h \
+    messagehandler.h \
     server.h \
-    D:/data/authanswer.h \
-    D:/data/basedata.h \
-    D:/data/userlist.h \
-    D:/data/authdata.h \
-    D:/data/message.h \
-    D:/data/userinfo.h \
-    D:/data/privatemessage.h
+    ../data/authanswer.h \
+    ../data/basedata.h \
+    ../data/userlist.h \
+    ../data/authdata.h \
+    ../data/message.h \
+    ../data/userinfo.h \
+    ../data/privatemessage.h

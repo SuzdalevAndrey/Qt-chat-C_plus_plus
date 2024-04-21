@@ -2,7 +2,7 @@
 #define dataBaseManagerAuth_H
 #include <QtSql>
 #include <QDebug>
-#include "D:\data\userinfo.h"
+#include "..\data\userinfo.h"
 
 class DataBaseManagerAuth
 {

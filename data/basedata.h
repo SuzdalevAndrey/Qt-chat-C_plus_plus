@@ -6,7 +6,6 @@
 
 enum DataType : qint8
 {
-    NOTHING,
     AUTHREQUEST,
     REGISTERREQUEST,
     AUTHRESPONSE,
@@ -17,7 +16,10 @@ enum DataType : qint8
     MESSAGE,
     USERLISTREQUEST,
     PRIVATEMESSAGE,
-    USERINFO
+    USERINFO,
+    CHATINFO,
+    CHATLISTRESPONSE,
+    CHATLISTREQUEST
 };
 
 class baseData

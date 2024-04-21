@@ -6,7 +6,7 @@
 #include <QTime>
 #include "socketmanager.h"
 #include "loginwindow.h"
-// #include "D:\data\userlist.h"
+// #include "..\data\userlist.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -30,6 +30,8 @@ private slots:
     void on_lineEdit_returnPressed();
 
     void on_loginPushButton_clicked();
+
+    void on_CreateChatPushButton_clicked();
 
 signals:
     void sendMessage(message& message);

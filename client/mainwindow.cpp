@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "CustomersWidgets/listuserswidget.h"
 #include "ui_mainwindow.h"
+#include "createchatwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -118,5 +119,16 @@ void MainWindow::sendMessageToServer()
 void MainWindow::handleReceivedIndex(const int &index)
 {
     this->indexRecipient = index;
+}
+
+
+void MainWindow::on_CreateChatPushButton_clicked()
+{
+    if(isLogin){
+        CreateChatWindow* createChatWindow = new CreateChatWindow();
+        createChatWindow->show();
+    }
+    else
+        QMessageBox::critical(this, "Error", "Пожалуйста авторизуйтесь для создания чата!");
 }
 

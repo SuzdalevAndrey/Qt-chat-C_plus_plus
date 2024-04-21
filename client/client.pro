@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     ./CustomersWidgets/listuserswidget.cpp \
     chatwindow.cpp \
+    createchatwindow.cpp \
     loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
 HEADERS += \
     ./CustomersWidgets/listuserswidget.h \
     chatwindow.h \
+    createchatwindow.h \
     loginwindow.h \
     mainwindow.h \
     registrationwindow.h \
@@ -43,6 +45,7 @@ HEADERS += \
 
 FORMS += \
     chatwindow.ui \
+    createchatwindow.ui \
     loginwindow.ui \
     mainwindow.ui \
     registrationform.ui

@@ -3,14 +3,14 @@
 
 #include "qobject.h"
 #include "qtcpsocket.h"
-#include "D:\data\basedata.h"
-#include "D:\data\authdata.h"
-#include "D:\data\message.h"
-#include "D:\data\userlist.h"
-#include "D:\data\authanswer.h"
-#include "D:\data\userlistrequest.h"
-#include "D:\data\privatemessage.h"
-#include "D:\data\userinfo.h"
+#include "..\data\basedata.h"
+#include "..\data\authdata.h"
+#include "..\data\message.h"
+#include "..\data\userlist.h"
+#include "..\data\authanswer.h"
+#include "..\data\userlistrequest.h"
+#include "..\data\privatemessage.h"
+#include "..\data\userinfo.h"
 
 class SocketManager: public QObject
 {

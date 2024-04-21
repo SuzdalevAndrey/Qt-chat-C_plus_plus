@@ -10,6 +10,8 @@ SOURCES += \
         authanswer.cpp \
         authdata.cpp \
         basedata.cpp \
+        chatinfo.cpp \
+        chatlist.cpp \
         main.cpp \
         message.cpp \
         privatemessage.cpp \
@@ -26,6 +28,8 @@ HEADERS += \
     authanswer.h \
     authdata.h \
     basedata.h \
+    chatinfo.h \
+    chatlist.h \
     message.h \
     privatemessage.h \
     userinfo.h \
