@@ -10,10 +10,12 @@ CONFIG += c++17 cmdline
 
 SOURCES += \
         authmanager.cpp \
+        chatmanager.cpp \
+        clientmanager.cpp \
         databasemanagerauth.cpp \
         databasemanagerhistorychat.cpp \
         main.cpp \
-        messagehandler.cpp \
+        messagemanager.cpp \
         server.cpp \
         ../data/authanswer.cpp \
         ../data/basedata.cpp \
@@ -30,9 +32,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     authmanager.h \
+    chatmanager.h \
+    clientmanager.h \
     databasemanagerauth.h \
     databasemanagerhistorychat.h \
-    messagehandler.h \
+    messagemanager.h \
     server.h \
     ../data/authanswer.h \
     ../data/basedata.h \
